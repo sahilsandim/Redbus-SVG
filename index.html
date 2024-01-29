@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbus clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" alt="">
+        </div>
+        <span class="seperator"></span>
+        <ul class="Left-items">
+            <li class="one">
+                <img src="	https://st.redbus.in/web/images/layout/rb_vertical.svg" alt="">
+                <span class="o">Bus Tickets</span>
+            </li>
+            <li class="two">
+                <img src="	https://st.redbus.in/web/images/layout/ryde_vertical.svg" alt="">
+                <span class="t">Cab Rental</span>
+            </li>
+            <li class="three">
+                <img src="	https://st.redbus.in/web/images/layout/rail_vertical.svg" alt="">
+                <span class="th">Train Tickets</span>
+            </li>
+        </ul>
+        <ul class="Right-items">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024">
+                <path fill="currentColor"
+                    d="M1023.84 572.544c.096-21.056-3.217-100.496-5.745-123.216c-29.12-260.752-240.752-450-503.184-450c-273.344 0-494.815 210.624-509.84 489.904c-.32 6.096-2.56 49.344-2.72 75.088l-.08 14.32C.958 584.56.158 590.672.158 596.976v214.656c0 46.88 38.128 85.008 85.008 85.008h86.288c46.88 0 85.023-38.128 85.023-85.008v-214.64c0-46.88-38.16-85.008-85.024-85.008H85.15a85.65 85.65 0 0 0-17.184 1.744c.48-10.383.912-18.576 1.025-21.056C82.159 247.888 276.127 63.328 514.91 63.328c229.28 0 414.128 165.344 439.568 393.12c1.072 9.504 2.448 33.664 3.552 57.92c-6.193-1.44-12.577-2.385-19.2-2.385h-85.28c-46.88 0-85.008 38.128-85.008 85.008v213.664c0 32.368 18.4 60.256 45.09 74.592l-205.44 80.656v-5.216c0-17.664-14.337-32-32-32h-96c-17.665 0-32 14.336-32 32v32c0 17.664 14.335 32 32 32h96c.272 0 .512-.08.784-.08l57.36-.224L963.89 895.007c4.32-1.792 7.984-4.464 10.992-7.664c28.848-13.616 48.991-42.736 48.991-76.688V596.99c0-5.216-.64-10.288-1.552-15.233c.88-2.944 1.504-6 1.52-9.216zm-938.689 3.44h86.29c11.6 0 21.023 9.408 21.023 21.008v214.656c0 11.6-9.44 21.008-21.025 21.008H85.152c-11.6 0-21.007-9.409-21.007-21.008V596.992c.015-11.6 9.423-21.008 21.007-21.008zm747.377 21.008c0-11.6 9.41-21.008 21.009-21.008h85.28c11.6 0 21.023 9.408 21.023 21.008v213.664c0 11.6-9.44 21.008-21.024 21.008h-85.28c-11.6 0-21.008-9.408-21.008-21.008z" />
+            </svg>
+            <span>Help</span>
+            <ul class="sv-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor"
+                        d="M16 7.992C16 3.58 12.416 0 8 0S0 3.58 0 7.992c0 2.43 1.104 4.62 2.832 6.09c.016.016.032.016.032.032c.144.112.288.224.448.336c.08.048.144.111.224.175A7.98 7.98 0 0 0 8.016 16a7.98 7.98 0 0 0 4.48-1.375c.08-.048.144-.111.224-.16c.144-.111.304-.223.448-.335c.016-.016.032-.016.032-.032c1.696-1.487 2.8-3.676 2.8-6.106m-8 7.001c-1.504 0-2.88-.48-4.016-1.279c.016-.128.048-.255.08-.383a4.17 4.17 0 0 1 .416-.991c.176-.304.384-.576.64-.816c.24-.24.528-.463.816-.639c.304-.176.624-.304.976-.4A4.15 4.15 0 0 1 8 10.342a4.185 4.185 0 0 1 2.928 1.166c.368.368.656.8.864 1.295c.112.288.192.592.24.911A7.03 7.03 0 0 1 8 14.993m-2.448-7.4a2.49 2.49 0 0 1-.208-1.024c0-.351.064-.703.208-1.023c.144-.32.336-.607.576-.847c.24-.24.528-.431.848-.575c.32-.144.672-.208 1.024-.208c.368 0 .704.064 1.024.208c.32.144.608.336.848.575c.24.24.432.528.576.847c.144.32.208.672.208 1.023c0 .368-.064.704-.208 1.023a2.84 2.84 0 0 1-.576.848a2.84 2.84 0 0 1-.848.575a2.715 2.715 0 0 1-2.064 0a2.84 2.84 0 0 1-.848-.575a2.526 2.526 0 0 1-.56-.848zm7.424 5.306c0-.032-.016-.048-.016-.08a5.22 5.22 0 0 0-.688-1.406a4.883 4.883 0 0 0-1.088-1.135a5.207 5.207 0 0 0-1.04-.608a2.82 2.82 0 0 0 .464-.383a4.2 4.2 0 0 0 .624-.784a3.624 3.624 0 0 0 .528-1.934a3.71 3.71 0 0 0-.288-1.47a3.799 3.799 0 0 0-.816-1.199a3.845 3.845 0 0 0-1.2-.8a3.72 3.72 0 0 0-1.472-.287a3.72 3.72 0 0 0-1.472.288a3.631 3.631 0 0 0-1.2.815a3.84 3.84 0 0 0-.8 1.199a3.71 3.71 0 0 0-.288 1.47c0 .352.048.688.144 1.007c.096.336.224.64.4.927c.16.288.384.544.624.784c.144.144.304.271.48.383a5.12 5.12 0 0 0-1.04.624c-.416.32-.784.703-1.088 1.119a4.999 4.999 0 0 0-.688 1.406c-.016.032-.016.064-.016.08C1.776 11.636.992 9.91.992 7.992C.992 4.14 4.144.991 8 .991s7.008 3.149 7.008 7.001a6.96 6.96 0 0 1-2.032 4.907" />
+                </svg>
+                <span>Account</span>
+            </ul>
+
+
+        </ul>
+    </header>
+    <main class="main">
+        <h1>India's No. 1 Online Bus Ticket Booking Site</h1>
+        <div class="o_ne">
+            <div class="t-o">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M184 32H72a32 32 0 0 0-32 32v144a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-16h64v16a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16V64a32 32 0 0 0-32-32M56 176v-56h144v56Zm0-96h144v24H56Zm16-32h112a16 16 0 0 1 16 16H56a16 16 0 0 1 16-16m8 160H56v-16h24Zm96 0v-16h24v16Zm-72-60a12 12 0 1 1-12-12a12 12 0 0 1 12 12m72 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12m72-68v24a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0M24 80v24a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0" />
+                </svg>
+
+                <input tabindex="-1" id="src" type="text" autocomplete="off" class="sc-bxivhb hrsLPT" value="">
+                <label for="src">From</label>
+
+            </div>
+        </div>
+        <div class="t_wo">
+            <div class="t-o-o">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M184 32H72a32 32 0 0 0-32 32v144a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-16h64v16a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16V64a32 32 0 0 0-32-32M56 176v-56h144v56Zm0-96h144v24H56Zm16-32h112a16 16 0 0 1 16 16H56a16 16 0 0 1 16-16m8 160H56v-16h24Zm96 0v-16h24v16Zm-72-60a12 12 0 1 1-12-12a12 12 0 0 1 12 12m72 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12m72-68v24a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0M24 80v24a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0" />
+                </svg>
+
+                <input tabindex="-1" id="src" type="text" autocomplete="off" class="sc-bxivhb hrsLPT" value="">
+                <label for="src">To</label>
+
+            </div>
+        </div>
+
+        <div class="th_ree">
+            <div class="th_e">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                        d="M5.673 0a.7.7 0 0 1 .7.7v1.309h7.517v-1.3a.7.7 0 0 1 1.4 0v1.3H18a2 2 0 0 1 2 1.999v13.993A2 2 0 0 1 18 20H2a2 2 0 0 1-2-1.999V4.008a2 2 0 0 1 2-1.999h2.973V.699a.7.7 0 0 1 .7-.699M1.4 7.742v10.259a.6.6 0 0 0 .6.6h16a.6.6 0 0 0 .6-.6V7.756zm5.267 6.877v1.666H5v-1.666zm4.166 0v1.666H9.167v-1.666zm4.167 0v1.666h-1.667v-1.666zm-8.333-3.977v1.666H5v-1.666zm4.166 0v1.666H9.167v-1.666zm4.167 0v1.666h-1.667v-1.666zM4.973 3.408H2a.6.6 0 0 0-.6.6v2.335l17.2.014V4.008a.6.6 0 0 0-.6-.6h-2.71v.929a.7.7 0 0 1-1.4 0v-.929H6.373v.92a.7.7 0 0 1-1.4 0z" />
+                </svg>
+                <input tabindex="-1" id="src" type="date" autocomplete="off" class="sc-bxivhb hrsLPT" value="">
+
+            </div>
+        </div>
+
+
+        <div class="fou_r">
+            <div class="fr">
+                <label for="">SEARCH BUSES</label>
+            </div>
+            <!-- <button id="search_button" tabindex="5" class="sc-dxgOiQ iztAdt" fdprocessedid="7emp3">SEARCH BUSES</button> -->
+        </div>
+
+        <img src="	https://st.redbus.in/Images/HomeIndia/HeroImageV2_C.png" alt="">
+
+        <div class="Upper-section">
+
+            <div class="Tickets">
+
+
+            </div>
+
+            <h2>TRENDING OFFERS</h2>
+            <ul class="style">
+                <ul>
+                    View All</ul>
+            </ul>
+
+            <div class="o-n-e">
+                <div class="one-box">
+                    <ul class="first-item">BUS</ul>
+                    <img src="	https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt="">
+                    <h3>Save up to Rs 250 on <br> bus tickets</h3>
+                    <h5>Valid till 31st Dec</h5>
+                    <ul class="second-item">FIRST</ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="two-box">
+                    <ul class="first-item">BUS</ul>
+                    <img src="	https://st.redbus.in/Images/INDOFFER/SUPERHIT/80x80.png" alt="">
+                    <h3>Save up to Rs 300 on <br>AP, TS routes</h3>
+                    <h5>Valid till 31st Dec</h5>
+                    <ul class="second-item">SUPERHIT</ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="third-box">
+                    <ul class="first-item">BUS</ul>
+                    <img src="https://st.redbus.in/Images/INDOFFER/BUS300/80x801.png" alt="">
+                    <h3>Max 20% off up to Rs <br>300 on Delhi, North,</h3>
+                    <h5>Valid till 31st Dec</h5>
+                    <ul class="second-item">BUS300</ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </g>
+                    </svg>
+
+                </div>
+
+            </div>
+            <div class="mid-img">
+                <img src="https://platforms.makemytrip.com/contents/dc5c97e0-6441-47d4-9865-5addf4a8bdb2" alt="">
+            </div>
+
+        </div>
+        <div class="text">
+            <h2>NOW, <b>GET MORE THAN JUST BUS </b> TICKETS WITH
+                REDBUS!</h2>
+
+
+        </div>
+        <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg" alt="" class="nxt-img">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/rydePop.svg" alt="" class="nxt-2img">
+        <div class="c">
+            <img src="https://s2.rdbuz.com/web/images/homeV2/AboutUs/ryde.svg" alt="">
+
+            <h4>Cab/Bus Rental</h4>
+        </div>
+
+        <ul class="seperator-two"></ul>
+
+        </div>
+
+        <div class="check">
+            <img src="	https://s1.rdbuz.com/web/images/homeV2/AboutUs/redRail.svg" alt="">
+
+            <h4>Train Tickets</h4>
+        </div>
+        <div class="text-a-check">
+            <h4>Rent Cabs, Tempo Travellers & Buses with best drivers</h4>
+        </div>
+
+        <div class="Three-items">
+            <div class="first-item">
+                <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/ryde_car.svg" alt="">
+                <h4>Outstation</h4>
+            </div>
+            <div class="Second-item">
+                <img src="https://s1.rdbuz.com/web/images/homeV2/AboutUs/ryde_car_hourly.svg" alt="">
+                <h4>Hourly Rental</h4>
+            </div>
+            <div class="Third-item">
+                <img src="https://s2.rdbuz.com/web/images/homeV2/AboutUs/ryde_airport_transport.svg" alt="">
+                <h4>Airoplane Transfers</h4>
+            </div>
+
+        </div>
+        <div class="last-button">
+            <ul></ul>
+            <h4>Book Cab / Bus Rental</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="img-section">
+            <h2>ENJOY THE APP!</h2>
+            <img src="https://s1.rdbuz.com/web/images/homeV2/appinstall/appInstallbg.svg" alt="">
+        </div>
+
+        <div class="img-boxsection">
+            <img src="	https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" alt="" class="o-n-e">
+            <h3 class="First-Text">Quick access</h3>
+            <img src="	https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" alt="" class="t-w-o">
+            <h3 class="Second-Text">Superior live tracking</h3>
+            <h2 class="first-item">4.5</h2>
+            <i class="fa-solid fa-star"></i>
+            <h3 class="item-1">50M+downloads</h3>
+            <h4 class="below-item">Play Store</h4>
+
+            <div class="center-seperator"></div>
+            <div class="img-boxsection-two">
+                <h2 class="second-item">4.6</h2>
+                <i class="fa-solid fa-star"></i>
+
+                <h3 class="item-2">50M+downloads</h3>
+                <h4 class="below2-item">Play Store</h4>
+            </div>
+        </div>
+
+        <div class="QR-Code">
+            <h3>Scan to download</h3>
+            <img src="https://s1.rdbuz.com/web/images/homeV2/qrCode.svg" alt="">
+        </div>
+
+
+
+        <div class="Next-img">
+            <h3>Download the App on</h3>
+            <img src="	https://s2.rdbuz.com/web/images/homeV2/appinstall/playStore.svg" alt="" class="f-img">
+            <img src="	https://s3.rdbuz.com/web/images/homeV2/appinstall/appStore.svg" alt="" class="s-img">
+        </div>
+
+
+
+        <div class="Next-section-Midimg">
+            <img src="	https://s1.rdbuz.com/web/images/homeV2/primoSection/primoTopBanner.svg" alt="">
+        </div>
+
+
+        <div class="New-Img-section">
+            <img src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg1.svg" alt="">
+            <h3>1 of 5 buses qualify</h3>
+            <h5>Primo’s strict safety qualification ensures a safer travel for you</h5>
+        </div>
+
+
+        <div class="New-Img1-section">
+            <img src="https://s3.rdbuz.com/web/images/homeV2/primoSection/primoSubImg2.svg" alt="">
+            <h3>Preferred by 90%</h3>
+            <h5>90% of travellers re-book Primo buses for its punctuality and comfort</h5>
+        </div>
+
+        <div class="New-Img2-section">
+            <img src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg3.svg" alt="">
+            <h3>9 Lac+ monthly travellers</h3>
+            <h5>In 2022, 9 Lac+ people traveled with Primo every month</h5>
+        </div>
+
+
+        <!-- <div class="First-sec">
+        </div> -->
+
+    </main>
+    <div class="Heading">
+        <h1>PARTNERED WITH</h1>
+    </div>
+
+    <div class="Scroll-name">
+        <h2>25 RTCs</h2>
+        <button>View All</button>
+    </div>
+
+    <div class="Bus-section">
+        <img src="	https://st.redbus.in/buslogos/country/ind/logo_group/10283.png" alt="">
+        <h3>APSRTC</h3>
+    </div>
+
+    <div class="Bus-section1">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/rtc/GSRTC.svg" alt="">
+        <h3>GSRTC</h3>
+    </div>
+
+    <div class="Bus-section2">
+        <img src="	https://st.redbus.in/Images/carousel/TSRTC.png" alt="">
+        <h3>TSRTC</h3>
+    </div>
+
+    <div class="Bus-section3">
+        <img src="	https://st.redbus.in/buslogos/country/ind/logo_group/10823.png" alt="">
+        <h3>MSRTC</h3>
+    </div>
+
+    <div class="Bus-section4">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/rtc/KERALA-RTC.svg" alt="">
+        <h3>Kerala RTC</h3>
+    </div>
+
+    <div class="Bus-section5">
+        <img src="	https://st.redbus.in/buslogos/country/ind/logo_group/16426.png" alt="">
+        <h3>SBSTC</h3>
+    </div>
+
+    <div class="Bus-section6">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/rtc/RSRTC.svg" alt="">
+        <!-- <h3>RSRTC</h3> -->
+    </div>
+
+    <div class="Bus-section7">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/rtc/UPSRTC.svg" alt="">
+        <h3>UPSRTC</h3>
+    </div>
+
+    <div class="Next-Bussection
+    ">
+        <h2>3500+ Private Bus Operators</h2>
+        <button>View All</button>
+
+    </div>
+
+    <div class="Tag-section">
+        <a href="" class="first">SRS Travels</a>
+        <a href="" class="second">Evacay Bus</a>
+        <a href="" class="third">Kallada Travels</a>
+        <a href="" class="fourth">KPN Travels</a>
+        <a href="" class="fifth">Orange Travels</a>
+    </div>
+    <div class="Tag-section-row2">
+        <a href="" class="first">Parveen Travels</a>
+        <a href="" class="second">Rajdhani Express</a>
+        <a href="" class="third">VRL Travels</a>
+        <a href="" class="fourth">Chartered Speed..</a>
+        <a href="" class="fifth">Bengal Tiger</a>
+    </div>
+    <div class="Tag-section-row3">
+        <a href="" class="first">SRM Travels</a>
+        <a href="" class="second">
+            Infant Jesus</a>
+        <a href="" class="third">Patel Travels</a>
+        <a href="" class="fourth">
+            JBT Travels</a>
+        <a href="" class="fifth">Shatabdi Travels</a>
+    </div>
+    <div class="Tag-section-row4">
+        <a href="" class="first">Eagle Travels</a>
+        <a href="" class="second">Kanker Roadways
+        </a>
+        <a href="" class="third">
+            Komitla</a>
+        <a href="" class="fourth">Hamsafar Travels</a>
+        <a href="" class="fifth">SriKrishna Travels</a>
+
+    </div>
+
+    <div class="Tag-section-row5">
+        <a href="" class="first">Mahasagar Travels</a>
+        <a href="" class="second">Raj Express</a>
+        <a href="" class="third">
+            Sharma Travels</a>
+        <a href="" class="fourth">Shrinath Travels</a>
+    </div>
+
+
+    <div class="New-Presence">
+        <h1>GLOBAL PRESENCE</h1>
+    </div>
+
+    <div class="countries-Names">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Colombia.svg" alt="">
+        <h1>Colombia</h1>
+    </div>
+    <div class="countries-Names2">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/India.svg" alt="">
+        <h1>India</h1>
+    </div>
+    <div class="countries-Names3">
+        <img src="	https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Indonesia.svg" alt="">
+        <h1>Indonesia</h1>
+    </div>
+    <div class="countries-Names4">
+        <img src="	https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Malaysia.svg" alt="">
+        <h1>Malaysia</h1>
+    </div>
+    <div class="countries-Names5">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Peru.svg" alt="">
+        <h1>Peru</h1>
+    </div>
+    <div class="countries-Names6">
+        <img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Singapore.svg" alt="">
+        <h1>Singapore</h1>
+    </div>
+
+    <div class="Bus-tickets-Details">
+     <h1>BOOK BUS TICKETS ONLINE</h1>
+    </div>
+
+
+
+
+    <div class="read-more">
+        <input type="checkbox" id="check">
+        <p class="onee">redBus is India's largest brand for online bus ticket booking and offers an easy-to-use online bus ticket and train ticket booking service, With over 36 million satisfied customers, 3500+ bus operators to choose from, and plenty of offers on bus ticket booking, redBus makes road journeys super convenient for travelers. A leading platform for booking bus tickets, redBus has been the leader in online bus booking over the past 17 years across thousands of cities and lakhs of routes in India. </p>
+        <p>Booking a bus ticket online on redBus app or website is very simple. You can download the redBus app or visit redbus.in and enter your source, destination & travel date to check the top-rated bus services available. You can then compare prices, ratings & amenities, select your preferred seat, boarding & dropping points and make the payment using multiple payment options like UPI, debit or credit card, net banking and more. With redBus you can be assured of safe & secure payment methods and guaranteed travel with the best seat and bus operator o..</p>
+        <div class="read-more2">
+            <p class="twoo">of your choice. Once the payment is confirmed, all you have to do is pack your bags and get ready to travel with the m-ticket which you can show to the bus operator on your mobile before boarding the bus. Online bus ticket booking with redBus is that simple!</p>
+            <p class="threee">redBus also offers other exclusive benefits on online bus tickets like flexible ticket reschedule options, easy & friendly cancellation policies, instant payment refund. With live bus tracking feature, you can plan your travel and never miss the bus. You can get the cheapest bus tickets by availing the best discounts for new & existing customers. With redDeals, you can also get exclusive & additional discounts on your online bus ticket booking. You will get 24X7 customer support on call, chat & help to resolve all your queries in English & local languages.
+
+            </p>
+
+            <p class="fourr">redBus offers Primo bus services which are specially curated by redBus with highly-rated buses with best-in-class service. With Primo by redBus, you can be assured of safe, comfortable & on-time bus service at no additional cost. With multiple boarding & dropping points available across all major cities in India, you can select as per your convenience and enjoy a smooth travel experience.</p>
+
+            <p class="fivee">redBus operates in 6 countries including India, Malaysia, Singapore, Indonesia, Peru, and Colombia and has sold over 220 million bus tickets worldwide through the redBus website and app. With over 36 million satisfied customers. redBus is committed to providing a world-class online bus booking experience to its users.</p>
+
+            <p>redBus offers bus tickets from some of the top private bus operators like Orange Travels, VRL Travels, SRS Travels, Chartered Bus, Praveen Travels and state government bus operators like APSRTC , TSRTC , MSRTC , GSRTC , TNSTC, RSRTC , UPSRTC and more. With redBus, customers have the flexibility of booking bus tickets of different bus types like AC/non-AC, Sleeper, Seater, Volvo, Multi-axle, AC Sleeper, Electric buses and more.</p>
+        </div>
+        <label for="check">Read more</label>
+    </div>
+
+
+    <div class="new-page2">
+        <h1>Today’s Exclusive redDeals on redBus</h1>
+
+        <h4>Don't miss out on these incredible offers, book your tickets now and travel with convenience and affordability. Hurry, grab the best deals before they're gone!</h4>
+    </div>
+
+    <div class="Box-section-new">
+        <img src="https://st.redbus.in/seo/common/redDeals_bg.webp" alt="">
+        
+        <h2>Unlock Unbeatable Exclusive redDeals! <span>20%OFF</span></h2>
+         
+        <span class="oneee">3793</span>
+        <span class="twooo">Deals</span>
+        <span class="seperator2"></span>
+        <button>Book now</button>
+    </div>
+    <img src="	https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" alt="" class="box2-imgg">
+    
+</body>
+
+</html>
